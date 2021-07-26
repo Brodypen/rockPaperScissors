@@ -1,0 +1,21 @@
+body {
+  background-color: grey;
+  margin: 0;
+  padding: 0;
+}
+div,
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button {
+  min-width: 25%;
+  height: 160px;
+}
+.middle {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
