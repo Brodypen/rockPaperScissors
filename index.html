@@ -5,23 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+
     <title>Rock Paper Scissors</title>
   </head>
+
   <body>
     <div class="page">
+      <header><h1>Rock Paper Scissors</h1></header>
       <div class="top">
-        <h1>Rock Paper Scissors</h1>
         <p>Best to 5!</p>
+        <h2 id="scoreC" class="scoreCount">0 - 0</h2>
+        <p id="moveS" class="moveStatus">Your move...</p>
       </div>
       <div class="middle">
-        <button class="Rock"></button>
-        <button class="Paper"></button>
-        <button class="Scissors"></button>
+        <button class="Rock" onclick="rockPaperScissors(0)">Rock</button>
+        <button class="Paper" onclick="rockPaperScissors(1)">Paper</button>
+        <button class="Scissors" onclick="rockPaperScissors(2)">
+          Scissors
+        </button>
       </div>
-      <footer class="bottom">
-        <p>Made by Brody Pen</p>
-      </footer>
     </div>
     <script src="script.js"></script>
   </body>
+  <footer class="bottom">
+    <p>Made by <a href="https://github.com/FrostandIce">Brody Pen</a></p>
+  </footer>
 </html>
