@@ -5,29 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-
+    <script src="script.js" defer></script>
     <title>Rock Paper Scissors</title>
   </head>
 
   <body>
-    <div class="page">
-      <header><h1>Rock Paper Scissors</h1></header>
-      <div class="top">
-        <p>Best to 5!</p>
-        <h2 id="scoreC" class="scoreCount">0 - 0</h2>
-        <p id="moveS" class="moveStatus">Your move...</p>
-      </div>
-      <div class="middle">
+    <header><h1>Rock Paper Scissors</h1></header>
+    <div class="top">
+      <p>Best to five</p>
+      <h2 id="scoreC" class="scoreCount">0 - 0</h2>
+      <!-- <p id="moveS" class="moveStatus">Your move...</p> -->
+    </div>
+    <div class="middle">
+      <div class="playerSide">
+        <h3>You</h3>
         <button class="Rock" onclick="rockPaperScissors(0)">Rock</button>
         <button class="Paper" onclick="rockPaperScissors(1)">Paper</button>
         <button class="Scissors" onclick="rockPaperScissors(2)">
           Scissors
         </button>
       </div>
+      <div class="computerSide">
+        <h3>Computer</h3>
+        <p class="CompRock">Rock</p>
+        <p class="CompPaper">Paper</p>
+        <p class="CompScissors">Scissors</p>
+      </div>
     </div>
-    <script src="script.js"></script>
   </body>
   <footer class="bottom">
-    <p>Made by <a href="https://github.com/FrostandIce">Brody Pen</a></p>
+    <p>Made by <a href="https://github.com/FrostandIce">Brody</a></p>
   </footer>
 </html>

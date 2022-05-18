@@ -3,34 +3,62 @@ header {
   align-self: center;
   width: 100%;
   justify-content: center;
-  background-color: grey;
+  /* background-color: white; */
+  background: linear-gradient(to right, black 50%, white 50%);
+  color: linear-gradient(to right, white 50%, black 50%);
 }
 body {
-  background-color: darkgrey;
+  background-color: white;
   margin: 0;
   padding: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(to right, black 50%, white 50%);
 }
-div {
+.top {
   display: flex;
-  flex-direction: column;
   align-items: center;
-}
-button {
-  min-width: 25%;
-  height: 160px;
-  font-size: 100%;
-}
-.middle {
-  /* display: flex; */
-  width: 90%;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
 }
 .bottom {
   display: flex;
   justify-content: center;
   margin-top: auto;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  flex: 0.1;
+  background: linear-gradient(to right, black 50%, white 50%);
+}
+.middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 1;
+}
+button {
+  background: none;
+  color: inherit;
+  border: none;
+}
+button, .computerSide p, h3 {
+  font-size: 32px;
+  margin: auto;
+  font-family: 'Courier New', Courier, monospace;
+}
+.playerSide, .computerSide {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.playerSide {
+  color: white;
+}
+h1, .top p, .bottom p, h2 {
+  font-size: 32px;
+  background: linear-gradient(to right, white 50%, black 50%);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: blue;
 }
