@@ -20,6 +20,8 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 .bottom {
   display: flex;
@@ -55,12 +57,15 @@ button, .computerSide p, h3 {
 .playerSide {
   color: white;
 }
-h1, .top p, .bottom p, h2 {
-  font-size: 32px;
+h1, .top p, .bottom p, h2, .playAgain {
+  font-size: 22px;
   background: linear-gradient(to right, white 50%, black 50%);
     -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
   background-color: blue;
+}
+.playAgain {
+  font-size: 64px;
 }

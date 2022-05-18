@@ -1,8 +1,10 @@
 const moveStatus = document.getElementById("moveS");
 const scoreCount = document.getElementById("scoreC");
+const playAgain = document.querySelector(".playAgain");
 let yourScore = 0;
 let enemyScore = 0;
 let won = false;
+playAgain.style.display = "none";
 function getRandomChoice() {
   return Math.floor(Math.random() * 3);
 }
@@ -30,4 +32,17 @@ function rockPaperScissors(choice) {
       won = true;
     }
   }
+  if (won) {
+    playAgain.style.display = "block";
+    moveStatus.style.display = "none";
+  }
+}
+function reset() {
+  yourScore = 0;
+  enemyScore = 0;
+  won = false;
+  playAgain.style.display = "none";
+  scoreCount.innerHTML = yourScore + " - " + enemyScore;
+  moveStatus.style.display = "block";
+  moveStatus.innerHTML = "Your move...";
 }
